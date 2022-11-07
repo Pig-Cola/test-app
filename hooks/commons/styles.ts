@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { StyleSheet } from 'react-native'
 
-const useGetStyleTest = <T extends StyleSheet.NamedStyles<T> | StyleSheet.NamedStyles<any>>(style: T | StyleSheet.NamedStyles<T>) => {
+const useStyles = <T extends StyleSheet.NamedStyles<T> | StyleSheet.NamedStyles<any>>(style: T | StyleSheet.NamedStyles<T>) => {
   const styles = useMemo(() => StyleSheet.create(style), [style])
   const getStyles = useMemo(
     () =>
@@ -16,4 +16,4 @@ const useGetStyleTest = <T extends StyleSheet.NamedStyles<T> | StyleSheet.NamedS
   return { styles, getStyles: getStyles as unknown as { [x in keyof T]: { style: T[x] } } }
 }
 
-export default useGetStyleTest
+export default useStyles

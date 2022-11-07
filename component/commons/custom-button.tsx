@@ -1,5 +1,5 @@
 import { ColorValue, GestureResponderEvent, Text, TextStyle, TouchableNativeFeedback, View } from 'react-native'
-import useStyle from '../../hooks/commons/use-style'
+import useStyle from '../../hooks/commons/styles'
 
 type props = {
   onPress?: (e: GestureResponderEvent) => void

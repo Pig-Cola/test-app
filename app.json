@@ -3,6 +3,7 @@
     "name": "test-app",
     "slug": "test-app",
     "version": "1.0.0",
+    "owner": "rsefaqtdkiju",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -23,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.rsefaqtdkiju.testapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "84e7edc0-769f-445f-96f1-536d973c04b3"
+      }
     }
   }
 }
